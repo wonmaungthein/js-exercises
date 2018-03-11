@@ -9,6 +9,11 @@
 
 var arr = new Array(100);
 
+
+arr.forEach(()=> {
+
+});
+
 /* EXPECTED OUTPUT */
 
 /*
