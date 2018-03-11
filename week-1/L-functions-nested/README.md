@@ -5,6 +5,7 @@ Functions are very powerful.
 * You can call other functions inside of functions!
 
 ```js
+
 function getAgeInDays(age) {
   return age * 365;
 }
