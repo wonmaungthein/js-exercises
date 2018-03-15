@@ -9,8 +9,14 @@
 
   As a learning exercise (you wouldn't do this normally), do all of the above in 1 line of code 
 */
+// var result;
 
 var startingValue = 5;
+
+function PIPING(startingValue) {
+  var result = startingValue * 2 + 10;
+  return result;
+}
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
