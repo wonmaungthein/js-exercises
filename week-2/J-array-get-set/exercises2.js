@@ -8,6 +8,9 @@
 
 var numbers = [2, 2, 3]; // Don't change this array literal declaration
 
+numbers[0] = 1;
+numbers.push(4);
+numbers.push("won");
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
