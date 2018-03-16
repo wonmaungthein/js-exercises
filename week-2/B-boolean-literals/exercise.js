@@ -18,7 +18,6 @@ console.log("Is Mozafar cool?", mozafarIsCool);
 console.log("Does 1 + 1 = 2?", caluclationCorrect);
 console.log("Are there more than 10 students?", moreThan10Students);
 
-
 /* 
   EXPECTED RESULT
   ---------------
@@ -27,3 +26,5 @@ console.log("Are there more than 10 students?", moreThan10Students);
   Does 1 + 1 = 2? true
   Are there more than 10 students? false
 */
+
+// DONE
