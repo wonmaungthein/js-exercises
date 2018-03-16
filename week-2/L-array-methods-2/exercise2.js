@@ -7,8 +7,24 @@
   Tip: use the string method .split() and the array method .join()
 */
 
-function capitalise(str) {}
+function capitalise(str) {
+  const firstCapital = str.split("")[0].toUpperCase();
+  const secondPart = str
+    .split("")
+    .splice(1)
+    .join("");
+  return firstCapital.concat(secondPart);
 
+  // or
+  // var firstString = str.split("")[0].toUpperCase();
+  // var secondPart = str
+  //   .split("")
+  //   .splice(1)
+  //   .join("");
+  // return `${firstString}${secondPart}`;
+}
+
+// console.log(secondPart);
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
