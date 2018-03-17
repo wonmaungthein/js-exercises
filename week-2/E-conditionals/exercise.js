@@ -4,13 +4,11 @@
 //   Add an if statement to only show the name if the role is student
 // */
 
-
 // var name = "Daniel";
 // var role = "mentor";
 
 // var name2 = "Harun";
 // var role2 = "student";
-
 
 // // console.log("Hi, My name is " + name);
 // // console.log("Hi, My name is " + name2);
@@ -23,13 +21,11 @@
 
 // if (role2 === 'student' ? console.log("Hi, My name is " + name2): console.log("Hi, My name is " + name));
 
-
-// /* 
+// /*
 // EXPECTED RESULT
 // ---------------
 // My name is Harun
 // */
-
 
 // const name = 'Hervin';
 
@@ -37,12 +33,9 @@
 //   console.log (`My name is ${name}`);
 // };
 
-
-
 // const today = 'Satu';
 
 // today === 'Saturday' ? console.log('Let\'s go to CYF') : console.log('Stay home');
-
 
 // 13 % 2 === 1; // 13 divided by 2 leaves a remainder of 1
 // 100 % 10 === 0; // 100 divided by 10 leaves a remainder of 0
@@ -59,7 +52,6 @@
 // } else {
 //   console.log ('positive even')
 // };
-
 
 // function sum (x,y){
 //   return x + y
@@ -81,7 +73,6 @@
 // }
 // console.log(thisOver(26));
 
-
 // for (var i = 1; i <= 15; i++) {
 //   if (i === 3) {
 //     console.log(`I am super ${i}`)
@@ -102,24 +93,21 @@
 //   }
 // }
 
-
 // console.log(isnegativeOrPositive(number));
-
-
 
 // const mentors = [];
 // mentors.push('Won','Harvin', 'Nasir');
 // console.log(mentors[1]);
 
-
 // for (var i = 1; i <= 100; i++ ){
 //   if (i % 2 === 0){
 //     console.log (i);
-//   } 
+//   }
 // }
 
-
 // Changing the name from Aray.
-const friends = ['Harvin', 'Nasir', 'Won'];
-friends.pop()
-console.log (friends);
+const friends = ["Harvin", "Nasir", "Won"];
+friends.pop();
+console.log(friends);
+
+// DONE
