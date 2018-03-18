@@ -17,12 +17,25 @@ var coffeeMachine = {
   },
   insertedAmount: 0,
   insertMoney: function(amount) {
-
+    if (amount === 2.4) {
+      return `Please take your cappuccino. Actual result: ${coffeeMachine.getCoffee()}
+      `;
+    } else if (amount === 1.5) {
+      return `Please take your blackCoffee. Actual result:${coffeeMachine.getCoffee()}
+      `;
+    } else if (amount === 4.0) {
+      return `Please take your flatWhite. Actual result:${coffeeMachine.getCoffee()}
+      `;
+    } else {
+      return `Sorry you don't have enough money for a flatWhite'. Actual result:${coffeeMachine.getCoffee()}
+`;
+    }
   },
 
   getCoffee: function(coffee) {
-
-}
+    return coffee;
+  }
+};
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
@@ -51,3 +64,5 @@ console.log(
   "Expected result: 'Sorry you don't have enough money for a flatWhite'. Actual result: " +
     coffeeMachine.getCoffee("flatWhite")
 );
+
+// DONE
