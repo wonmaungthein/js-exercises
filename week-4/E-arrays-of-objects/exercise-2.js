@@ -43,24 +43,20 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
 
-// var destinationNamesWithin500Kms = travelDestinations.filter(destination => {
-//   if (destination.distanceKms < 500) {
-//     return destination.destinationName;
-//   }
-// });
-
 // Complete here
 
 // console.log(destinationNamesWithin500Kms);
-var destinationNameReachableByFerry = travelDestinations.filter(function(
-  destination
-) {
-  if (destination.transportations.includes("ferry")) {
-    return destination.destinationName;
-  } else {
-    return;
-  }
-});
+
+// var destinationNameReachableByFerry = travelDestinations.filter(function(
+//   destination
+// ) {
+//   if (destination.transportations.includes("ferry")) {
+//     return destination.destinationName;
+//   } else {
+//     return;
+//   }
+// });
+
 // Complete here
 
 // var destinationNamesMoreThan300KmsAwayByTrain = // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
@@ -74,8 +70,10 @@ DO NOT EDIT ANYTHING BELOW THIS LINE
 //     destinationNamesWithin500Kms
 // );
 
-console.log(
-  "Question 2) Expected result: Dublin, actual result: " +
-    destinationNameReachableByFerry
-);
+// console.log(
+//   "Question 2) Expected result: Dublin, actual result: " +
+//     destinationNameReachableByFerry
+// );
 // console.log("Question 3) Expected result: London,Paris, actual result: " + destinationNamesMoreThan300KmsAwayByTrain);
+
+// NOT DONE
