@@ -33,5 +33,28 @@ When you open index.html in your browser, it should display the existing message
 
 */
 
-
 // Write your code here
+
+const messageBox = document.getElementById("message-list");
+
+getMessages();
+
+setInterval(getMessages, 5000);
+
+function getMessages() {
+  fetch("https://codeyourfuture.herokuapp.com/api/messages")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(messages) {
+      messageBox.innerHTML = messages
+        .map(
+          message => `
+        <div>
+        <p>${message.content} </p>
+<p>${message.datetime}</p>
+</div>`
+        )
+        .join(" ");
+    });
+}
