@@ -35,30 +35,30 @@ When you open index.html in your browser, it should display the existing message
 
 // Write your code here
 // This line of code is for testing function
-const messageList = document.getElementById("message-list");
+// const messageList = document.getElementById("message-list");
 
 // This line of code below is working for working function, uncomment it to make it work
 // const messageBox = document.getElementById("message-list");
 
-getMessages();
+// getMessages();
 
 // uncomment out the setIntervel function below to make this work
 // setInterval(getMessages, 2000);
 
-// This is a testing function
-function getMessages() {
-  fetch("https://codeyourfuture.herokuapp.com/api/messages")
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(message) {
-      return (messageList.innerHTML = message
-        .map(function(message) {
-          return `<div>${message.content} ${message.datetime} </div>`;
-        })
-        .join(""));
-    });
-}
+// // This is a testing function
+// function getMessages() {
+//   fetch("https://codeyourfuture.herokuapp.com/api/messages")
+//     .then(function(response) {
+//       return response.json();
+//     })
+//     .then(function(message) {
+//       return (messageList.innerHTML = message
+//         .map(function(message) {
+//           return `<div>${message.content} ${message.datetime} </div>`;
+//         })
+//         .join(""));
+//     });
+// }
 
 // This original function is working. :)
 // function getMessages() {
@@ -78,3 +78,18 @@ function getMessages() {
 //         .join(" ");
 //     });
 // }
+
+// doing exercise with Rukimini
+
+fetch("https://codeyourfuture.herokuapp.com/api/messages")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(datas) {
+    var messageList = document.getElementById("message-list");
+    messageList.innerHTML = datas
+      .map(function(data) {
+        return ` <div> ${data.content}          ${data.datetime} </div>`;
+      })
+      .join("");
+  });

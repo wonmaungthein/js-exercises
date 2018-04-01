@@ -30,8 +30,8 @@ Use the above example to get familiar with setInterval function.
 For example, print your name every 2 seconds.
 */
 
-const printMyName = () => console.log("Won Maung Thein");
-setInterval(printMyName, 2000);
+// const printMyName = () => console.log("Won Maung Thein");
+// setInterval(printMyName, 2000);
 // Write your code here
 
 /*

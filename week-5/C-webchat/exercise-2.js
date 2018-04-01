@@ -43,20 +43,20 @@ on the submit button. Then check the following:
 //   input.value = ""; // clear the input field
 // });
 
-const SubmitButton = document.getElementById("submit");
-SubmitButton.addEventListener("click", function() {
-  var inputSelection = document.getElementById("message-input");
-  var requestBody = { content: inputSelection.value };
-  var postRequestParameters = {
-    body: JSON.stringify(requestBody),
-    method: "POST",
-    headers: {
-      "content-type": "application/json"
-    }
-  };
-  fetch(
-    "https://codeyourfuture.herokuapp.com/api/messages",
-    postRequestParameters
-  ); // fetch the data
-  inputSelection.value = "";
-});
+// const SubmitButton = document.getElementById("submit");
+// SubmitButton.addEventListener("click", function() {
+//   var inputSelection = document.getElementById("message-input");
+//   var requestBody = { content: inputSelection.value };
+//   var postRequestParameters = {
+//     body: JSON.stringify(requestBody),
+//     method: "POST",
+//     headers: {
+//       "content-type": "application/json"
+//     }
+//   };
+//   fetch(
+//     "https://codeyourfuture.herokuapp.com/api/messages",
+//     postRequestParameters
+//   ); // fetch the data
+//   inputSelection.value = "";
+// });
