@@ -4,6 +4,7 @@
   Using .find() (and any other array methods necessary), find the lowest pass score
 */
 
+
 var testScores = [90, 50, 25, 100, 81, 66, 80];
 // var lowestPassScore = findLowestPassScore(haystack);
 const passScores = testScores.map(testScore => {
@@ -11,6 +12,8 @@ const passScores = testScores.map(testScore => {
     return testScore;
   }
 });
+
+var lowestPassScore = findLowestPassScore(testScores);
 
 var sortedPassScores = passScores.sort();
 console.log(sortedPassScores);
